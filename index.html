@@ -14,17 +14,33 @@
     </nav>
     <div class="container">
       <div class="row">
-        <form id="routes">
-          <div class="col-xs-5">
-            <input id="from" type="text" placeholder="Origin">
-          </div>
-          <div class="col-xs-2">
-            
-          </div>
-          <div class="col-xs-5">
-            <input id="to" type="text" placeholder="Destination">
-          </div>
-        </form>
+        <div class="col-sm-5">
+          <input id="from" type="text" placeholder="Origin">
+        </div>
+        <div class="col-sm-2">
+          <div id="from-to-switcher"></div>
+        </div>
+        <div class="col-sm-5">
+          <input id="to" type="text" placeholder="Destination">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-5">
+          <select id="travel-mode">
+            <option>Driving</option>
+            <option>Walking</option>
+            <option>Bicycling</option>
+          </select>
+        </div>
+        <div class="col-sm-5">
+          <select id="measurement-mode">
+            <option value="miles">Miles</option>
+            <option value="km">Kilometres</option>
+          </select>
+        </div>
+        <div class="col-sm-2">
+          <button class="btn btn-primary" type="submit" id="go">Go</button>
+        </div>
       </div>
 <!--       <div class="row">
         <div class="col-xs-12 col-sm-8">
