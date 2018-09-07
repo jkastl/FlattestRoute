@@ -16,7 +16,7 @@ var feetMultiplicator = null;
 google.load("visualization", "1", {packages: ["columnchart"]});
 
 $(window).scroll(function() {
-  if ($(document).scrollTop() > 50) {
+  if ($(document).scrollTop() > 20) {
     $('nav').addClass('shrink');
   } else {
     $('nav').removeClass('shrink');
