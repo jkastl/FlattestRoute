@@ -1,13 +1,17 @@
 body {
-  padding-top: 4rem;
+  padding-top: 5rem;
 }
 
-nav.shrink {
+.navbar {
+  transition: all 0.2s ease;
+}
+
+.navbar.shrink {
   padding-top: .2rem;
   padding-bottom: .2rem;
 }
 
-nav.shrink .navbar-brand {
+.navbar.shrink .navbar-brand {
   font-size: 1rem;
   padding-top: .1rem;
   padding-bottom: .1rem;
