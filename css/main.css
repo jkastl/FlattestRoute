@@ -17,21 +17,18 @@ body {
   padding-bottom: .1rem;
 }
 
+#to,
+#from,
+#go {
+	width: 100%;
+}
+
+
+
 #map-canvas {
 	width: 500px;
 	height: 500px;
 	background-color: #CCC;
-}
-
-#to,
-#from {
-	font-size: 16px;
-	width: 100%;
-}
-
-#go {
-	margin: 20px 0 20px 0;
-  width: 150px;
 }
 
 #slope_chart,
@@ -92,7 +89,7 @@ form input {
 	width: 480px;
 }
 
-form #from-to-switcher {
+#from-to-switcher {
 	background-image: url(../img/fromToSwitcher.png);
 	background-repeat: no-repeat;
 	margin-left: 45%;
@@ -102,7 +99,7 @@ form #from-to-switcher {
 	width: 44px;
 }
 
-form #from-to-switcher:hover:after {
+#from-to-switcher:hover:after {
 	opacity : 1;
 }
 
@@ -115,16 +112,6 @@ form #from-to-switcher:hover:after {
 #content {
 	width:	100px;
 	height: 100px;
-}
-
-#author {
-	margin-top: 20px;
-	font-size: 12px;
-	color: #999;
-}
-
-#travel-mode, #measurement-mode {
-	font-size: 16px;
 }
 
 .selector-wrapper{
@@ -141,10 +128,6 @@ form #from-to-switcher:hover:after {
 		width: 95%;
 		height: 350px;
 		margin: 0 auto;
-	}
-
-	#github {
-		display: none;
 	}
 	
 	.travel-info {
