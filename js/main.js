@@ -59,7 +59,7 @@ $(function () {
 
     //  Create event handler that will start the calcRoute function when
     //  the go button is clicked.
-    $("form#routes").on("submit", function (e) {
+    $("#go").on("click", function (e) {
 
         measurementMode = $("#measurement-mode").val();
         metricUnit = measurementMode == "miles" ? "ft" : "m";
