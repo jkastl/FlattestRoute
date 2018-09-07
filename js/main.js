@@ -15,6 +15,14 @@ var feetMultiplicator = null;
 // Load the visualization API with the columnchart package.
 google.load("visualization", "1", {packages: ["columnchart"]});
 
+$(window).scroll(function() {
+  if ($(document).scrollTop() > 50) {
+    $('nav').addClass('shrink');
+  } else {
+    $('nav').removeClass('shrink');
+  }
+});
+
 // Runs after page is loaded.
 $(function () {
     var from = getURLParameter('from');
