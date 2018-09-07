@@ -25,19 +25,36 @@
         </div>
       </div>
       <div class="row">
-        <div class="col-sm-5">
-          <select id="travel-mode">
-            <option>Driving</option>
-            <option>Walking</option>
-            <option>Bicycling</option>
-          </select>
+        <div class="accordion" id="optionsContainer">
+          <div class="card">
+            <div class="card-header" id="optionsHeader">
+              <h5 class="mb-0">
+                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#optionsBody" aria-expanded="true" aria-controls="optionsBody">
+                  Options
+                </button>
+              </h5>
+            </div>
+
+            <div id="optionsBody" class="collapse show" aria-labelledby="optionsHeader" data-parent="#optionsContainer">
+              <div class="card-body">
+                <div class="col-sm-5">
+                  <select id="travel-mode">
+                    <option>Driving</option>
+                    <option>Walking</option>
+                    <option>Bicycling</option>
+                  </select>
+                </div>
+                <div class="col-sm-5">
+                  <select id="measurement-mode">
+                    <option value="miles">Miles</option>
+                    <option value="km">Kilometres</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-sm-5">
-          <select id="measurement-mode">
-            <option value="miles">Miles</option>
-            <option value="km">Kilometres</option>
-          </select>
-        </div>
+
         <div class="col-sm-2">
           <button class="btn btn-primary" type="submit" id="go">Go</button>
         </div>
