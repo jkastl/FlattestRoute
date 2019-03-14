@@ -89,7 +89,7 @@ function initialize_maps() {
     directionsDisplay = new google.maps.DirectionsRenderer(rendererOptions);
     var mapCanvas = $('#map-canvas').get(0);
     var mapOptions = {
-        center: new google.maps.LatLng(37.787930,-122.4074990),
+        center: new google.maps.LatLng(43.6741532,-93.0087578),
         zoom: 13,
         // Disables zoom and streetview bar but can stil zoom with mouse.
         disableDefaultUI: false,
